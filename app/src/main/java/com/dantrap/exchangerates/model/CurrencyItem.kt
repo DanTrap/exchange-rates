@@ -2,12 +2,15 @@ package com.dantrap.exchangerates.model
 
 import com.google.gson.annotations.SerializedName
 
-data class CurrencyListItem(
+data class CurrencyItem(
     @SerializedName("ID")
     val id: String,
 
     @SerializedName("NumCode")
     val numCode: Int,
+
+    @SerializedName("CharCode")
+    val charCode: String,
 
     @SerializedName("Nominal")
     val nominal: Int,
